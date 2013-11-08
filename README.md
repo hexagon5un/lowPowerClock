@@ -9,3 +9,6 @@ Also includes a bonus simple clock library that I end up using from time to time
 the secondsTick() function from a more accurate time source (like a calibrated oscillator) once
 per second, the global variables and a couple functions take care of the rest.
 
+You just need to add initializations for the clock (what time is it now?) and actually make it *do* something.
+
+
