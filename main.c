@@ -41,6 +41,10 @@ int main(void) {
 #if DEBUG_LED
     LED_PORT ^= (1 << LED);         /* enable LED output for diagnosis */
 #endif
+    if (days == 30) {
+      // execute something 30 days after this started running.
+    }
+
   }                                                  /* End event loop */
-  return (0); 
+  return (0);
 }
