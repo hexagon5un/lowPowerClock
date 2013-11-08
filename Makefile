@@ -4,7 +4,7 @@
 ##########    Check these every time you start a new project    ##########
 ##########------------------------------------------------------##########
 
-MCU   = atmega168
+MCU   = atmega48p
 F_CPU = 1000000
 BAUD = 9600
 ## Also try BAUD = 19200 or 38400 if you're feeling lucky.
@@ -14,11 +14,11 @@ MAIN = main.c
 
 ## If you've split your program into multiple .c / .h files, 
 ## include the additional source (in same directory) here 
-LOCAL_SOURCE = 
+LOCAL_SOURCE = rtc.c
 
 ## Here you can link to one more directory (and multiple .c files)
-EXTRA_SOURCE_DIR = ../AVR-Programming-Library/
-EXTRA_SOURCE_FILES = USART.c
+EXTRA_SOURCE_DIR = 
+EXTRA_SOURCE_FILES = 
 
 ##########------------------------------------------------------##########
 ##########                 Programmer Defaults                  ##########
@@ -26,7 +26,7 @@ EXTRA_SOURCE_FILES = USART.c
 ##########        (Can override.  See bottom of file.)          ##########
 ##########------------------------------------------------------##########
 
-PROGRAMMER_TYPE = usbasp
+PROGRAMMER_TYPE = usbtiny
 # extra arguments to avrdude: baud rate, chip type, -F flag, etc.
 PROGRAMMER_ARGS = 	
 
